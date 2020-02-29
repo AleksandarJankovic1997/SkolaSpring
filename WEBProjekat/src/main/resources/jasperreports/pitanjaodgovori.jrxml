@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pitanjaodgovori" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1b521624-d7f4-46f9-8542-bd45a0cce619">
+	<parameter name="student" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="pitanje" class="java.lang.String"/>
+	<field name="odgovor" class="java.lang.String"/>
+	<field name="imePredmeta" class="java.lang.String"/>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{imePredmeta}]]></groupExpression>
+		<groupHeader>
+			<band height="30">
+				<textField>
+					<reportElement x="160" y="0" width="100" height="30" uuid="6db77c1c-be1e-48b1-9379-2cdf97bc54e3">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0fc4e4a9-17a1-408c-ad6d-d382fc75520d"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#000000"/>
+						<topPen lineWidth="1.0" lineStyle="Double"/>
+						<leftPen lineWidth="1.0" lineStyle="Double"/>
+						<bottomPen lineWidth="1.0" lineStyle="Double"/>
+						<rightPen lineWidth="1.0" lineStyle="Double"/>
+					</box>
+					<textFieldExpression><![CDATA[$F{imePredmeta}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="60" y="0" width="100" height="30" backcolor="#AEEBCC" uuid="deff3b86-8535-4391-b540-518cd165b786">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0fc4e4a9-17a1-408c-ad6d-d382fc75520d"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Double"/>
+						<leftPen lineWidth="1.0" lineStyle="Double"/>
+						<bottomPen lineWidth="1.0" lineStyle="Double"/>
+						<rightPen lineWidth="1.0" lineStyle="Double"/>
+					</box>
+					<text><![CDATA[imePredmeta]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="231" y="21" width="100" height="30" uuid="171ad838-f244-44bf-8d20-a979fbac0a3a"/>
+				<textFieldExpression><![CDATA[$P{student}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="131" y="21" width="100" height="30" uuid="48d8a6ea-0950-49d1-95f0-90659ae6484a"/>
+				<text><![CDATA[ime studenta]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="460" y="30" width="100" height="30" uuid="fef1f9df-3515-4b07-9120-9f7938510f41"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="160" y="16" width="100" height="30" backcolor="#AEEBCC" uuid="63073b58-fd2c-4a72-bf7f-42fb62c7a77d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e60959c9-5c75-47f5-853f-d71d35f5cc91"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Double"/>
+					<leftPen lineWidth="1.0" lineStyle="Double"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+					<rightPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<text><![CDATA[pitanje]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="16" width="100" height="30" backcolor="#AEEBCC" uuid="0ef63693-5e1d-4ff3-ad0c-85a55f475799">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ab0f5dbd-d4d7-45a3-bd5c-553a52926f92"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Double"/>
+					<leftPen lineWidth="1.0" lineStyle="Double"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+					<rightPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<text><![CDATA[odgovor]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="260" y="0" width="100" height="30" uuid="1771aad6-a41b-4e7c-9091-c218e6a0648f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e60959c9-5c75-47f5-853f-d71d35f5cc91"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Double"/>
+					<leftPen lineWidth="1.0" lineStyle="Double"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+					<rightPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{pitanje}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="100" height="30" uuid="8b3e3304-055e-4760-8f1a-e3999a265cdb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ab0f5dbd-d4d7-45a3-bd5c-553a52926f92"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Double"/>
+					<leftPen lineWidth="1.0" lineStyle="Double"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+					<rightPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{odgovor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="200" y="10" width="100" height="30" uuid="8336aca2-7376-4e73-a7d0-c126056af76e"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

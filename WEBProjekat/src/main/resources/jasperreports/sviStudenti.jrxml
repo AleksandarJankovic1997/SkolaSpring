@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f5a22bf5-b933-4cb3-8cea-38d767f4f4e5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="predmet" class="java.lang.String"/>
+	<parameter name="profesor" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ime" class="java.lang.String"/>
+	<field name="prezime" class="java.lang.String"/>
+	<field name="brojIndeksa" class="java.lang.Integer"/>
+	<field name="datumR" class="java.util.Date"/>
+	<sortField name="brojIndeksa"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="0" width="100" height="30" uuid="aaf74f81-6e04-4b68-a4d0-70c808c243d4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Predmet:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="0" width="230" height="30" uuid="c9723067-f295-4aa8-b542-586b7dc3dfd9"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{predmet}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="40" width="100" height="30" uuid="0b95dae4-98f4-49f4-b010-2c4ba9cb1466"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Profesor:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="40" width="100" height="30" uuid="9885f95d-808c-4e7a-a613-d3d18df6ded1"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{profesor}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="440" y="0" width="100" height="30" uuid="cfdf3283-33c1-4761-908c-176fbd32e8ee"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="40" width="100" height="30" uuid="23a9f7e0-8058-494c-a510-6c3bf14bd38a"/>
+				<text><![CDATA[broj studenata:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="420" y="40" width="100" height="30" uuid="f9379f9b-4c4a-454d-a859-25647338f143"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="65" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="0" width="100" height="30" uuid="97d0ae0c-e060-4c9e-993a-c278c0a5eb5a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="04b1218c-f2e4-4143-9da8-9a901322915f"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<text><![CDATA[ime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="100" height="30" uuid="7d987354-fc5b-4dec-965c-f95fe436d303">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d1dabb8b-a343-467f-a48e-896f5eb04694"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<text><![CDATA[prezime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="0" width="100" height="30" uuid="7aa094e0-4199-486f-b527-22a6eed1e0d4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2de38759-ee5a-4e5a-89d2-23fc31ee706d"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<text><![CDATA[brojIndeksa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="0" width="100" height="30" uuid="55771e9f-e86a-44be-9141-22cb0701297c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ba9ebaa5-34a5-4e9e-86a0-370a599f1ad7"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<text><![CDATA[datumR]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="120" y="10" width="100" height="30" uuid="a7ee3ae2-06b8-468e-bdac-b99e91ca01ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="04b1218c-f2e4-4143-9da8-9a901322915f"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{ime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="10" width="100" height="30" uuid="3c38abb6-cf0f-4d86-9a15-aa1cbcf38422">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d1dabb8b-a343-467f-a48e-896f5eb04694"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{prezime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="FixRelativeToBottom" x="20" y="10" width="100" height="30" uuid="e90310d1-1e2f-4b1d-8feb-f8100a216c07">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2de38759-ee5a-4e5a-89d2-23fc31ee706d"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{brojIndeksa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="10" width="100" height="30" uuid="2d7e57b4-209e-45b8-b1f0-ba6d29358948">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ba9ebaa5-34a5-4e9e-86a0-370a599f1ad7"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{datumR}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="59" splitType="Stretch">
+			<textField>
+				<reportElement x="230" y="20" width="100" height="30" uuid="c06ff761-f320-480e-80ba-f86046e6fdd9"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
